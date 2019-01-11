@@ -10,28 +10,35 @@
         url('noyh-regular-webfont.woff') format('woff');
 }
 @font-face{
-font-family: 'NoyhLight';
-src:  url('noyh-light-webfont.woff2') format('woff2'),
-      url('noyh-light-webfont.woff') format('woff');
+font-family: 'UrbaniLight';
+src:  url('Urbani-Light.woff2') format('woff2'),
+      url('Urbani-Light.woff') format('woff');
+    }
+@font-face{
+font-family: 'UrbaniRegular';
+src:  url('Urbani-Regular.woff2') format('woff2'),
+      url('Urbani-Regular.woff') format('woff');
+    }
+@font-face{
+font-family: 'UrbaniThin';
+src:  url('Urbani-Thin.woff2') format('woff2'),
+      url('Urbani-Thin.woff') format('woff');
     }
 body{
 background-color:black;
 margin:0px;
-background-image:url(../img/water.jpg);
-background-size:100vw;
+border:0px;
+background-image:url(../img/gradient.svg);
 background-size:cover;
-background-attachment: bottom;
+background-size:110vw;
+background-position: center;
+width:100%;
+height:100%;
 background-repeat:no-repeat;
-
-}
-#bgimg{
-    width:100%;
-    height:100%;
-    float:left;
-    position:relative;
+padding:0px;
 }
 #container{
-  height:67vh;
+  height:59vh;
   width:auto;
   padding-top:33vh;
 }
@@ -41,13 +48,13 @@ background-repeat:no-repeat;
     margin:auto;
     padding-left:2vh;
     padding-bottom:2vh;
-    background-color: rgba(1, 12, 11, 0.7);
+    background-color: rgba(1, 12, 11, 0);
     border-radius: 15px;
     transition-timing-function: ease-out;
 
 }
 #containertext:hover{
-  background-color: rgba(1, 12, 11, 1);
+  background-color: rgba(1, 12, 11, 0);
   transition: 0.5s;
 }
 header{
@@ -56,12 +63,12 @@ header{
     color:white;
 }
 .subhead{
-    font-family: 'NoyhRegular', sans-serif;
-    font-size:2.1vw;
-
+    font-family: 'UrbaniThin', sans-serif;
+    font-size:1.6vw;
+    margin-bottom:20px;
 }
 #tagline{
-    color:white;
+    color:#20f8de;
     margin:auto;
     text-align: center;
     margin-left:-12vw;
@@ -74,28 +81,28 @@ header{
     color:white;
     margin-left:26vw;
     width:14vw;
-    border-left-color: white;
+    border-left-color: #20f8de;
     border-left-style:groove;
     padding-left:5px;
     border-left-width: thin;
 }
 .body{
     font-size:1vw;
-    font-family: 'NoyhLight', sans-serif;
+    font-family: 'UrbaniLight', sans-serif;
 }
 
 #greybar{
     width:100%;
     height:55px;
-    background-color:#212121;
+    background-color:#ffffff;
 }
 #foottext{
-    width:820px;
+    width:93vw;
     margin:auto;
     line-height:55px;
 }
 #foottext a{
-    color:white;
+    color:black;
     font-family: 'NoyhLight', sans-serif;
     transition:.3s;
 }
