@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'NoyhHeavy';
+  src:  url('noyh-heavy-webfont.woff2') format('woff2'),
+        url('noyh-heavy-webfont.woff') format('woff');
+
+}
+@font-face{
+  font-family: 'NoyhRegular';
+  src:  url('noyh-regular-webfont.woff2') format('woff2'),
+        url('noyh-regular-webfont.woff') format('woff');
+}
+@font-face{
+font-family: 'NoyhLight';
+src:  url('noyh-light-webfont.woff2') format('woff2'),
+      url('noyh-light-webfont.woff') format('woff');
+    }
+body{
+background-color:black;
+margin:0px;
+background-image:url(../img/water.jpg);
+background-size:100vw;
+background-size:cover;
+background-attachment: bottom;
+background-repeat:no-repeat;
+
+}
+#bgimg{
+    width:100%;
+    height:100%;
+    float:left;
+    position:relative;
+}
+#container{
+  height:67vh;
+  width:auto;
+  padding-top:33vh;
+}
+#containertext{
+    width:50vw;
+    height:auto;
+    margin:auto;
+    padding-left:2vh;
+    padding-bottom:2vh;
+    background-color: rgba(1, 12, 11, 0.7);
+    border-radius: 15px;
+    transition-timing-function: ease-out;
+
+}
+#containertext:hover{
+  background-color: rgba(1, 12, 11, 1);
+  transition: 0.5s;
+}
+header{
+    font-family: 'NoyhHeavy', sans-serif;
+    font-size:7vw;
+    color:white;
+}
+.subhead{
+    font-family: 'NoyhRegular', sans-serif;
+    font-size:2.1vw;
+
+}
+#tagline{
+    color:white;
+    margin:auto;
+    text-align: center;
+    margin-left:-12vw;
+}
+#name{
+    text-align: center;
+    color:
+}
+#description{
+    color:white;
+    margin-left:26vw;
+    width:14vw;
+    border-left-color: white;
+    border-left-style:groove;
+    padding-left:5px;
+    border-left-width: thin;
+}
+.body{
+    font-size:1vw;
+    font-family: 'NoyhLight', sans-serif;
+}
+
+#greybar{
+    width:100%;
+    height:55px;
+    background-color:#212121;
+}
+#foottext{
+    width:820px;
+    margin:auto;
+    line-height:55px;
+}
+#foottext a{
+    color:white;
+    font-family: 'NoyhLight', sans-serif;
+    transition:.3s;
+}
+#foottext a:hover{
+    color:#009E9E;
+}
+a {
+    text-decoration: none;
+}
+#white{
+width:100%;
+height:auto;
+background-color:white;
+padding-bottom: 50px;
+}
+#container2{
+    width:50vw;
+    height:auto;
+    margin:auto;
+}
+.section{
+    color:#043332;
+}
+#project1{
+    margin-left:100px;
+}
+#project1 nav a{
+    line-height:2.5em;
+}
+#project1 a{
+    color:#009E9E;
+}
+#project1 a:hover{
+  color:#043332;
+  transition:0.7s;
+}
+#container2 .subhead{
+    color:#009E9E;
+}
+@media only screen and (max-width:500px) {
+  #containertext{
+  width:90vw;
+  }
+  header{
+    font-size:20vw
+  }
+
+
+}
