@@ -93,17 +93,18 @@ header{
 
 #greybar{
     width:100%;
-    height:55px;
+    height:8vh;
     background-color:#ffffff;
 }
 #foottext{
-    width:93vw;
+    width:50vw;
     margin:auto;
-    line-height:55px;
+    line-height:8vh;
+    font-size:1vw;
 }
 #foottext a{
-    color:black;
-    font-family: 'NoyhLight', sans-serif;
+    color:#4a4d51;
+    font-family: 'UrbaniLight', sans-serif;
     transition:.3s;
 }
 #foottext a:hover{
@@ -122,9 +123,15 @@ padding-bottom: 50px;
     width:50vw;
     height:auto;
     margin:auto;
+    display:grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: auto auto;
+  }
+#projects{
+  grid-row: 1;
 }
 .section{
-    color:#043332;
+    color:#4a4d51;
 }
 #project1{
     margin-left:100px;
@@ -142,13 +149,76 @@ padding-bottom: 50px;
 #container2 .subhead{
     color:#009E9E;
 }
+
+#conServ{
+  width:100%;
+  margin:auto;
+}
+.linkimg img{
+  display:block;
+  transition: .3s ease-in-out;
+  -webkit-filter: blur(2.5px); /* Chrome, Safari, Opera */
+  filter: blur(2.5px);
+  margin:auto;
+}
+.linkimg{
+  display:inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+  border-color:#4a4d51;
+  border:5px;
+  margin:auto;
+  width:50vw;
+  grid-row:2;
+}
+.linkimg:hover img{
+  -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  filter: blur(0px);
+  transform: scale(1.1)
+
+}
+#linkimgcontainer{
+  width:50vw;
+  margin:auto;
+}
 @media only screen and (max-width:500px) {
+  body{
+    background-image:url(../img/mobilegradient.svg);
+  }
   #containertext{
   width:90vw;
+  margin:auto;
   }
   header{
-    font-size:20vw
+    margin:auto;
   }
+  #name{
+    font-size:25vw;
+    margin-top:-50px;
+    line-height:20vw;
+  }
+  #tagline{
+    font-size:4.5vw;
+    margin:auto;
+    margin-top:3px;
+  }
+#description{
+  display:none;
+}
+#foottext{
+  font-size:4vw;
+}
+#projects{
+  font-size:13vw;
+  text-align: center;
+}
+.subhead{
+  font-size:4vw;
+  text-align:center;
+  font-family: 'UrbaniLight', sans-serif;
 
-
+}
+.body a{
+  font-size: 3vw;
+}
 }
