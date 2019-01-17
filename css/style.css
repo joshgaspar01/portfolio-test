@@ -38,9 +38,10 @@ background-repeat:no-repeat;
 padding:0px;
 }
 #container{
-  height:59vh;
+  min-height:67vh;
   width:auto;
   padding-top:33vh;
+  height:auto;
 }
 #containertext{
     width:50vw;
@@ -59,29 +60,31 @@ padding:0px;
 }
 header{
     font-family: 'NoyhHeavy', sans-serif;
-    font-size:7vw;
     color:white;
 }
 .subhead{
     font-family: 'UrbaniThin', sans-serif;
-    font-size:1.6vw;
+    font-size:1.7rem;
     margin-bottom:20px;
 }
 #tagline{
-    color:#20f8de;
+    color:#66beff;
     margin:auto;
     text-align: center;
     margin-left:-12vw;
 }
 #name{
     text-align: center;
-    color:
+    color:white;
+    font-size:6.5rem;
 }
 #description{
     color:white;
     margin-left:26vw;
+    margin-top:1vw;
+    font-size: 0.9rem;
     width:14vw;
-    border-left-color: #20f8de;
+    border-left-color: #66beff;
     border-left-style:groove;
     padding-left:5px;
     border-left-width: thin;
@@ -89,6 +92,8 @@ header{
 .body{
     font-size:1vw;
     font-family: 'UrbaniLight', sans-serif;
+    width:auto;
+    margin:auto;
 }
 
 #greybar{
@@ -100,7 +105,7 @@ header{
     width:50vw;
     margin:auto;
     line-height:8vh;
-    font-size:1vw;
+    font-size:1rem;
 }
 #foottext a{
     color:#4a4d51;
@@ -108,7 +113,7 @@ header{
     transition:.3s;
 }
 #foottext a:hover{
-    color:#009E9E;
+    color:#66beff;
 }
 a {
     text-decoration: none;
@@ -123,63 +128,55 @@ padding-bottom: 50px;
     width:50vw;
     height:auto;
     margin:auto;
-    display:grid;
-    grid-template-columns: 50vw;
-    grid-template-rows: auto auto;
   }
 #projects{
   grid-row: 1;
 }
 .section{
     color:#4a4d51;
+    font-size: 4.5rem;
 }
-#project1{
-    margin-left:100px;
-}
-#project1 nav a{
-    line-height:2.5em;
-}
-#project1 a{
-    color:#009E9E;
-}
-#project1 a:hover{
-  color:#043332;
-  transition:0.7s;
-}
+
 #container2 .subhead{
     color:#009E9E;
 }
 
-#conServ{
+.linkimg img{
   width:100%;
-  margin:auto;
+
 }
 .linkimg img{
   display:block;
   transition: .3s ease-in-out;
-  -webkit-filter: blur(2.5px); /* Chrome, Safari, Opera */
-  filter: blur(2.5px);
+  -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  filter: blur(0px);
   margin:auto;
 }
 .linkimg{
   display:inline-block;
   overflow: hidden;
   border-radius: 10px;
-  border-color:#4a4d51;
-  border:5px;
-  margin:auto;
-  width:50vw;
-  grid-row:2;
+  width:15vw;
 }
 .linkimg:hover img{
-  -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
-  filter: blur(0px);
+  -webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+  filter: blur(1px);
   transform: scale(1.1)
 
 }
-#linkimgcontainer{
+.linkimgcontainer{
   width:50vw;
+  display:inline-flex;
+  flex-flow: wrap;
   margin:auto;
+  justify-content: space-around;
+
+
+}
+#conServ{
+  grid-column: 1;
+  grid-row: 1;
+
 }
 @media only screen and (max-width:500px) {
   body{
@@ -193,23 +190,29 @@ padding-bottom: 50px;
     margin:auto;
   }
   #name{
-    font-size:25vw;
+    font-size:23vw;
     margin-top:-50px;
     line-height:20vw;
   }
   #tagline{
-    font-size:4.5vw;
+    font-size:4.8vw;
     margin:auto;
     margin-top:3px;
   }
 #description{
-  display:none;
+width:50vw;
+margin:auto;
+margin-top:20px;
 }
 #foottext{
   font-size:4vw;
 }
-#projects{
-  font-size:13vw;
+#container2{
+  width:80vw;
+  margin:auto;
+}
+.section{
+  font-size:15vw;
   text-align: center;
 }
 .subhead{
@@ -218,7 +221,13 @@ padding-bottom: 50px;
   font-family: 'UrbaniLight', sans-serif;
 
 }
+.linkimg{
+  width:35vw;
+}
 .body a{
   font-size: 3vw;
+}
+.linkimgcontainer{
+  width:80vw;
 }
 }

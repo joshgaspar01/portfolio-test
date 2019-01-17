@@ -1,0 +1,148 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NatureHop</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Noto+Sans+KR:300" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="stylesheet" href="css/fontello.css">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<div id="navigation">
+<nav>
+<a href="#landing">About</a>
+<a href="#section1">Schedule</a>
+<a href="#section2">Register</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+<div id="landing">
+
+<div class="logo">
+<div id="buncontainer">
+<img src="img/logo.png" alt="a jumping rabbit" id="bun">
+</div>
+<div id="logotext">
+<h1>Naturehop</h1>
+</div>
+</div>
+<div id="summary">
+<p>NatureHop leads enganging nature walks for <a href="#section2">NatureHop members</a> around the natural areas of the Greater Toronto Area every weekend. Led by a group of naturalists and volunteers with varied and expansive knowlege of the local ecosystems. On these walks you will learn all about the adaptation of wildlife to the urban environment and what you can do to preserve it.</p>
+</div>
+</div>
+<div class="section" id="section1">
+  <div class="sectionimage" id="image1"><img src="img/quackyboi.jpg"></div>
+<div class="sectiontext">
+<h2>The nature walk schedule </h2>
+<p>Our nature walk schedule is updated every week with new locations.
+<div id="schedule">
+    <div id="fullschedule">
+  <div id="schedulehead">
+    <h3>Friday</h3>
+    <h3>Saturday</h3>
+    <h3>Sunday</h3>
+  </div>
+  <div id="schedulecontent">
+    <div id="friday">October 19<br><a href="https://www.google.ca/maps/place/Downsview+Park/@43.7420072,-79.4827743,17z/data=!3m1!4b1!4m5!3m4!1s0x882b31f34ec495c9:0x6f8358ed07e82495!8m2!3d43.7420033!4d-79.4805856">Downsview Park</a><br>1:30pm<br>October 26<br><a href="https://www.google.ca/maps/place/Trinity+Bellwoods+Park/@43.6481124,-79.4162906,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34fb59eedcdb:0x3fb22c8aefb75bb!8m2!3d43.6481085!4d-79.4141019">Trinity Bellwoods Park</a><br>3:00pm
+    </div>
+    <div id="saturday">October 20<br><a href="https://www.google.ca/maps/place/Little+Norway+Park/@43.634559,-79.3994992,17z/data=!4m5!3m4!1s0x882b35239f1fb32f:0xfa389400b021e2ee!8m2!3d43.635226!4d-79.3987963">Little Norway Park</a><br>1:30pm<br>October 27<br><a href="https://www.google.ca/maps?q=tommy+thompson+park&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiG-L3o4YHeAhVOUt8KHaS4B6sQ_AUIDigB">Tommy Thompson Park</a><br>3:00pm
+    </div>
+    <div id="sunday">October 21<br><a href="https://www.google.ca/maps/place/Claireville+Conservation+Area/@43.7218684,-79.5989546,11.01z/data=!4m5!3m4!1s0x882b3c9dc50c4e99:0xc2bcf995cb34c79!8m2!3d43.7553486!4d-79.6422938">Claireville Conservation</a><br>1:30pm<br>October 28<br><a href="https://www.google.ca/maps/place/High+Park/@43.6454623,-79.4629195,16.88z/data=!4m5!3m4!1s0x882b35d32336f705:0x1bcc825a300ee67!8m2!3d43.6465479!4d-79.4636903">High Park</a><br>3:00pm
+    </div>
+  </div>
+  </div>
+  <div class="dropschedule">
+  <div class="dropdown">
+    <button onclick="frimyFunction()" id="fridropbtn" class="dropbtn">Fri</button><button onclick="satmyFunction()" id="satdropbtn" class="dropbtn">Sat</button><button onclick="sunmyFunction()" id="sundropbtn" class="dropbtn">Sun</button>
+    <div id="fridropdown" class="fridropdown-content">October 19<br>Downsview Park 1:30pm<br>October 26<br>Trinity Bellwoods Park 3:00pm</div>
+    <div id="satdropdown" class="satdropdown-content">October 20<br>Little Norway Park 1:30pm<br>October 27<br>Tommy Thompson Park 3:00pm</div>
+    <div id="sundropdown" class="sundropdown-content">October 21<br>Claireville Conservation 1:30pm<br>October 28<br>High Park 3:00pm</div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="section2">
+
+<div class="sectiontext">
+<h2>Join the NatureHop community today!</h2>
+  <div id="register">
+    <div id="member">
+      <p>Register as a member at $10/month and get access to all of our nature walks.
+      <br> <br>Full name:<br>
+      <input></input>
+      <br>Phone Number:<br>
+      <input></input>
+      <br>Email address:<br>
+      <input></input>
+      <button>Submit</button>
+    </p>
+    </div>
+    <div id="volunteer">
+      <p>You can also apply to lead and assist in leading walks as a volunteer for free!
+      <br><br>Full name:<br>
+      <input></input>
+      <br>Phone Number:<br>
+      <input></input>
+      <br>Email address:<br>
+      <input></input>
+      <button>Submit</button>
+      </p>
+
+    </div>
+  </div>
+</div>
+<div class="sectionimage" id="image2"><img src="img/goose.jpg"></div>
+</div>
+<div class="section" id="section1">
+<div class="sectionimage" id="image1"><img src="img/birb.jpg"></div>
+<div class="sectiontext">
+<h2>Frequently asked questions</h2>
+<p id="faq">
+Q: Can I take pictures on the nature walks?<br>
+A: You can bring your own camera or borrow a Naturehop camera to snap pictures of any wildlife observed on the walk<br><br>
+Q: What will I learn on the walks?<br>
+A: Our walk leaders will teach you how to treat the wildlife and plant life that populates the Greater Toronto Area<br><br>
+Q: Is it okay to feed the wild animals?<br>
+A: The leaders of the nature walks can teach you about which foods are safe to feed to which animals. If you are not sure if you should feed an animal, ask!
+
+</p>
+</div>
+
+</div>
+<div class="section" id="section2">
+
+<div class="sectiontext">
+<h2>Get the latest updates on our social media!</h2>
+<p id="social">
+<a href="https://www.instagram.com/officialrickastley/" class="icon-instagram">
+<a href="https://twitter.com/rickastley" class="icon-twitter"></a>
+<a href="https://www.facebook.com/rickastleybrazil/" class="icon-facebook-squared"></a>
+</p>
+</div>
+<div class="sectionimage" id="image3"><img src="img/squirrel.jpg"></div>
+</div>
+<div id="footerimage"><img src="img/footerimage.png"></div>
+<div id="footer">
+<div id="contact"><a href="mailto:contact@naturehop.net">contact@naturehop.net</a><br>
+<a>(555) 555-5565</a>
+</div>
+<div id="misclinks">
+<a href="#section1">Schedule</a><br>
+<a href="#section2">Register</a>
+</div>
+<div id="socialfoot"><a href="https://www.instagram.com/officialrickastley/" class="icon-instagram">
+<a href="https://twitter.com/rickastley" class="icon-twitter"></a>
+<a href="https://www.facebook.com/rickastleybrazil/" class="icon-facebook-squared"></a>
+</div>
+</div>
+<script  type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+
+</html>
